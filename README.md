@@ -19,8 +19,8 @@
   在UC浏览器下会显示如下效果: <br/>
   <img src="http://images2015.cnblogs.com/blog/561794/201606/561794-20160625170655344-1968154825.jpg"/><br/>
   其他浏览器下还好，但是比如qq浏览器一刚开始光标在整个input框内，当输入的时候，会居中对齐；<br/>
-  ## 如上解决的方法有2种；<br/>
-  ## 第一种方案是不设置input的行高；如下代码：<br/>
+   如上解决的方法有2种；<br/>
+   第一种方案是不设置input的行高；如下代码：<br/>
   <pre>
      .input-cls {
         width:10rem;
@@ -29,9 +29,9 @@
         text-indent: 0.12rem;
         font-size: 1rem;
       }
-  </pre><br/>
+  </pre>
 
-  ## 第二种解决方法是设置padding和高度一起使用；<br/>
+   第二种解决方法是设置padding和高度一起使用；<br/>
   代码如下：
   <pre>
      .input-cls {
@@ -43,7 +43,7 @@
         text-indent: 0.12rem;
         font-size: 1rem;
       }
-  </pre><br/>
+  </pre>
  在UC浏览器下会显示如下效果: <br/>
   <img src="http://images2015.cnblogs.com/blog/561794/201606/561794-20160625170720844-987241925.jpg"/>
   <br/>
