@@ -1,7 +1,7 @@
 # H5--移动端知识点整理 <br/>
 ## 1. 在UC浏览器下input光标定位的问题。<br/>
-  ### 比如如下简单的代码，给input框设置高度和行高；<br/>
-  ### 如下代码：<br/>
+   比如如下简单的代码，给input框设置高度和行高；<br/>
+   如下代码：<br/>
   <input type="text" class="input-cls"/>
   <pre>
   a,button,input,optgroup,select,textarea{
