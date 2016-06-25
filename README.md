@@ -2,7 +2,7 @@
 ## 1. 在UC浏览器下input光标定位的问题。<br/>
   比如如下简单的代码，给input框设置高度和行高；<br/>
   如下代码：<br/>
-  &it;input type="text" class="input-cls"/&gt;
+  &lt; input type="text" class="input-cls"/&gt;
   <pre>
   a,button,input,optgroup,select,textarea{
     outline: none;
