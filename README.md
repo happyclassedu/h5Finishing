@@ -5,7 +5,7 @@
   <input type="text" class="input-cls"/>
   <pre>
   a,button,input,optgroup,select,textarea{
-      outline: none;
+    outline: none;
   }
   .input-cls {
     width:10rem;
@@ -22,27 +22,27 @@
   ## 如上解决的方法有2种；<br/>
   ## 第一种方案是不设置input的行高；如下代码：<br/>
   <pre>
-     .input-cls {
-        width:10rem;
-        height:2rem;
-        border:1px solid red;
-        text-indent: 0.12rem;
-        font-size: 1rem;
-      }
+    .input-cls {
+      width:10rem;
+      height:2rem;
+      border:1px solid red;
+      text-indent: 0.12rem;
+      font-size: 1rem;
+    }
   </pre><br/>
 
   ## 第二种解决方法是设置padding和高度一起使用；<br/>
   代码如下：
   <pre>
-     .input-cls {
-        width:10rem;
-        height:1rem;
-        line-height:1rem;
-        padding:0.5rem 0;
-        border:1px solid red;
-        text-indent: 0.12rem;
-        font-size: 1rem;
-      }
+    .input-cls {
+      width:10rem;
+      height:1rem;
+      line-height:1rem;
+      padding:0.5rem 0;
+      border:1px solid red;
+      text-indent: 0.12rem;
+      font-size: 1rem;
+    }
   </pre><br/>
  在UC浏览器下会显示如下效果: <br/>
   <img src="http://images2015.cnblogs.com/blog/561794/201606/561794-20160625170720844-987241925.jpg"/>
@@ -51,8 +51,8 @@
    <img src="http://images2015.cnblogs.com/blog/561794/201606/561794-20160625175059906-1845942393.png"/> <br/>
    解决的方法，在css加如下代码即可：
    <pre>
-      a,button,input,optgroup,select,textarea{
-        outline: none;
-      }
+    a,button,input,optgroup,select,textarea{
+      outline: none;
+    }
    </pre>
    
