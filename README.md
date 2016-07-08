@@ -108,3 +108,24 @@
             }
          </style>
        </pre>
+## 4. Reactjs在ios设备上onClick事件失效的解决办法
+      比如在react中一个div绑定事件，点击它，在IOS下会点击不了，但是在安卓下或者浏览器下都是正常的；比如如下React
+      代码：
+      <pre>
+        var testDiv = React.createClass({
+          fn : function(){
+              alert('component was clicked!');
+          },
+          render:function(){
+              return (
+                  <div className="clickme" onClick={me.renderData}></div>
+              )
+          }
+        });
+      </pre>
+  解决的办法有如下几种：
+  1. 把div标签改成input标签，然后设置input的type为button，或者改为a标签就可以解决；
+  2. 第二种方法是给div标签加一个样式，设置div{cursor:pointer;} 也可以解决，但是这种方案在编写css的
+     时候最好注释一下，因为如果不注释的话，很有可能时间长了或者重构代码的时候，会忽略掉这种情况，导致以后
+     会出现bug的可能；
+  3. 在组件中的componentDidMount方法中，为该div绑定事件，在回调函数中写入想要实现的逻辑。
